@@ -1,2 +1,2 @@
 # locadora-veiculo-web
-Projeto exemplo da algaworks
+Projeto exemplo com foco no JPA.
