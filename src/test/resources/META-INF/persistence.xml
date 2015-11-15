@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+
+	<persistence-unit name="locadoraVeiculoPUJUnit" transaction-type="RESOURCE_LOCAL">
+	<!-- Usei essa classe apenas para mapear as entidades do JPA, não sei pq a anotação nao foi suficiente para os testes. -->
+		<class>com.algaworks.curso.jpa2.modelo.Carro</class>
+		<class>com.algaworks.curso.jpa2.modelo.ModeloCarro</class>
+		<class>com.algaworks.curso.jpa2.modelo.Fabricante</class>
+		<class>com.algaworks.curso.jpa2.modelo.Acessorio</class>
+		<class>com.algaworks.curso.jpa2.modelo.Aluguel</class>
+		<class>com.algaworks.curso.jpa2.modelo.ApoliceSeguro</class>
+		<class>com.algaworks.curso.jpa2.modelo.Sexo</class>
+		<class>com.algaworks.curso.jpa2.modelo.Funcionario</class>
+		<class>com.algaworks.curso.jpa2.modelo.Motorista</class>
+		<class>com.algaworks.curso.jpa2.modelo.Pessoa</class>
+
+
+<!-- Estas propriedades configurei no hibernate.properties, pois o JIntegrity exige que seja lá.
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/algaworks" />
+			<property name="hibernate.default_schema" value="locadoraveiculos_teste" />
+			<property name="javax.persistence.jdbc.user" value="postgres" />
+			<property name="javax.persistence.jdbc.password" value="postgres" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<property name="hibernate.hbm2ddl.import_files" value="initial_data.sql" />
+			
+		</properties>
+ -->		
+
+	</persistence-unit>
+
+</persistence>
